@@ -15,7 +15,7 @@ display(HTML("<style>.container { width:100% !important; }</style>"))
 from arcgis import GIS
 from arcgis.geocoding import batch_geocode
 from IPython.display import display
-gis = GIS(username = 'sunderwood_intern', password = 'Yellowbird123$')
+gis = GIS(username = '*******', password = '********')
 import pandas as pd
 import arcpy
 import os
