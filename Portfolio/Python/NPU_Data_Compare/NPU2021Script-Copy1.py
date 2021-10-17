@@ -1,3 +1,8 @@
+
+#This programs compares data downloaded from a shapefile loaded on AGOL to data from an excel sheet on the local drive. The program find the records  from the excel sheet that
+#aren't in the AGOL download and appends them to the AGOL download. Then it geocodes the new rows, deletes the existing layer from AGOL and reuploads the newly consolidated
+#and geocoded layer
+
 #!/usr/bin/env python
 # coding: utf-8
 
