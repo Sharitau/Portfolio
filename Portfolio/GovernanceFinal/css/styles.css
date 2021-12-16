@@ -31,18 +31,94 @@
   text-shadow: 2px 2px 2px black;
 }
 
+
+
+
+
+
+/*Container for map elements */
+.svgContainer{
+  fill: #0B1E38;
+  position: abosolute;
+  z-index: -1;
+
+}
+.countries {
+    fill: #0B1E38;
+    stroke: #fff;
+    stroke-width: 2px;
+    z-index: -1;
+
+
+}
+
+.map{
+position: absolute;
+right:0;
+z-index: -1;
+  top:800;
+   /*border: medium solid #999;*/
+
+
+}
+
+.regions{
+  fill: #316331;
+  z-index: -1;
+
+}
+
+
+.gratLines {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+
+    z-index: -1;
+}
+
+.gratBackground {
+    fill: #0B1E38;
+    z-index: -1;
+}
+
+.dropdown {
+    position: absolute;
+    top: 1200px;
+    left: 460px;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999
+    z-index: 950;
+}
+
+
+
 /*Scroll Panel */
 article.container {
   background: #0B1E38;
   color: #d8d8d8;
-  opacity: 0.9;
+z-index: 1000;
   width: 30%;
-  max-width: 600px;
+  opacity: 0.95;
+  height: 500px;
+  overflow-y: scroll;
+
+
+
   float: left;
+
 }
+
+
 
 article {
   letter-spacing: .2px;
+  z-index: 1000;
 }
 
 article h1 {
@@ -51,6 +127,7 @@ article h1 {
   padding-bottom: 10px;
   text-align: center;
   font-size: 30px;
+  z-index: 1000;
 
 }
 
@@ -58,91 +135,63 @@ article h2, h4 {
   width: 90%;
   margin: 10px 0px 20px 20px;
   color: #316331;
+  z-index: 1000;
 }
 
 article h2.subhead {
   color: #fff;
   text-align: center;
   margin: 32px auto 2px;
+  z-index: 1000;
 }
 
 section {
   margin-top: 25px;
-}
-
-
-/*Container for map elements */
-.svgContainer{
-  fill: #0B1E38;
-
-}
-.countries {
-    fill: #0B1E38;
-    stroke: #fff;
-    stroke-width: 2px;
-
-}
-
-.map{
-position: absolute;
-  right: 0;
-   /*border: medium solid #999;*/
-
-
-}
-
-.regions{
-  fill: #316331;
-}
-
-
-.gratLines {
-    fill: none;
-    stroke: #999;
-    stroke-width: 1px;
-}
-
-.gratBackground {
-    fill: #0B1E38;
-}
-
-.dropdown {
-    position: absolute;
-    top: 1000px;
-    left: 480px;
-    z-index: 10;
-    font-family: sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 0px;
-    border: 1px solid #999;
-    box-shadow: 2px 2px 4px #999;
+  z-index: 1000;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #0B1E38;
-  color: #444;#316331
+  color: white;
   cursor: pointer;
   padding: 18px;
-  width: 92%;
-  text-align: left;
+  width: 100%;
   border: none;
+  text-align: left;
   outline: none;
+  font-size: 15px;
   transition: 0.4s;
+  z-index: 1000;
+
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover{
+.active, .accordion:hover {
   background-color: #316331;
+  z-index: 1000;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  z-index: 1000;
+}
+
+.active:after {
+  content: "\2212";
+  z-index: 1000;
+}
+
 .panel {
   padding: 0 18px;
-  background-color: white;
-  display: none;
+  background-color: #0B1E38;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  z-index: 1000;
 }
 
 option {

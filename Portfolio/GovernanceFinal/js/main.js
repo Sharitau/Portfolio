@@ -64,7 +64,7 @@ function setMap(){
   //use queue to parallelize asynchronous data loading
   d3.queue()
     .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/GovernanceFinal/data/world.topojson") //load background spatial data
-    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/GovernanceFinal/data/Africa.TOPOJSON")
+    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/GovernanceFinal/data/AfricaCountries.TOPOJSON")
     .await(callback);
 
 
@@ -72,7 +72,7 @@ function setMap(){
   function callback(error, world, africa) {
     //translate europe TopoJSON
     var worldCountries = topojson.feature(world, world.objects.ne_10m_admin_0_countries),
-      africanCountries = topojson.feature(africa, africa.objects.ne_10m_admin_0_countries).features;
+      africanCountries = topojson.feature(africa, africa.objects.AfricaCountries).features;
 
 
     //add rest of world countries to map
@@ -97,10 +97,10 @@ function setMap(){
     }).sort();
 
 
-    createDropdown(countryNames);
+    createDropdown(countryNames, africanCountries);
   };
 
-  function createDropdown(countryNames) {
+  function createDropdown(countryNames, africanCountries) {
     //add select element
     var dropdown = d3.select("body")
       .append("select")
@@ -108,10 +108,27 @@ function setMap(){
       .on("change", function() {
         // The value is the name of the country
         var countryName = this.value;
-        var othercountries = countryNames.filter(function(x) { return x !== countryName; });
-        //console.log(othercountries);
-        //var othercountriesLength = othercountries.length;
 
+        for (var i = 0; i < africanCountries.length; i++) {
+              if (africanCountries[i].properties.ADMIN == countryName) {
+                var politicalStability = africanCountries[i].properties.Political;
+                var voiceAndAccountability = africanCountries[i].properties.Voice_and;
+                var governmentEffec = africanCountries[i].properties.Government;
+                var regualtoryQuality = africanCountries[i].properties.Regulatory;
+                var ruleOfLaw = africanCountries[i].properties.Rule_of_La;
+                var controlOfCorruption = africanCountries[i].properties.Control_of;
+                var governanceTotal = africanCountries[i].properties.Governance;
+
+
+              }
+
+            }
+
+      var text = document.getElementById("p1").innerHTML = "Country name: " + countryName+ "<br><br>" +  " Political Stability: "+ politicalStability + "<br><br>" + "Voice and Accountability: "+ politicalStability + "<br><br>" + "Government Effectiveness: "
+     + governmentEffec + "<br><br>" + "Regulatory Quality: " + regualtoryQuality + "<br><br>" + "Rule of Law: " + ruleOfLaw + "<br><br>" + "Control of Corruption: " + controlOfCorruption + "<br><br>" + "Governance Sum: " + governanceTotal;
+
+
+        var othercountries = countryNames.filter(function(x) { return x !== countryName; });
         for (var i = 0; i < othercountries.length; i++) {
           if (countryNames.includes(othercountries[i])) {
                 otherCountriesI = othercountries[i];
