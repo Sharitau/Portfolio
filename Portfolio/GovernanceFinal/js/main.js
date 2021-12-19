@@ -86,11 +86,13 @@ function setMap(){
       .data(africanCountries)
       .enter()
       .append("path")
+
       .attr("class", "regions")
       .attr("data-country", function(d) {
         return d.properties.ADMIN;
       })
-      .attr("d", path);
+      .attr("d", path)
+
 
     var countryNames = africanCountries.map(function(d) {
       return d.properties.ADMIN;
