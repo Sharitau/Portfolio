@@ -217,7 +217,7 @@
         let mylayer = L.layerGroup().addTo(map)
 
 
-        $.getJSON("https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/MetroAtl-pop-proportional/atlanta.geojson", function (json){
+        $.getJSON("https://raw.githubusercontent.com/Sharitau/Portfolio/main/MetroAtl-pop-proportional/atlanta.geojson", function (json){
           L.geoJSON(json, {
             onEachFeature: addMyData,
           })
