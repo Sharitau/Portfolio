@@ -245,7 +245,7 @@
         };
 
         var count = $.when(
-          $.getJSON("https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/MetroAtl-pop-proportional/counties.geojson"),
+          $.getJSON("https://raw.githubusercontent.com/Sharitau/Portfolio/main/MetroAtl-pop-proportional/counties.geojson"),
           ).done(function(shapes) {
             style:myStyle
 
@@ -259,7 +259,7 @@
 
 
          //change the file url to match yours
-         $.getJSON("https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/MetroAtl-pop-proportional/countiespop.geojson")
+         $.getJSON("https://raw.githubusercontent.com/Sharitau/Portfolio/main/MetroAtl-pop-proportional/countiespop.geojson")
          .done(function(data) {
              var info = processData(data);
              createPropSymbols(info.timestamps, data);
