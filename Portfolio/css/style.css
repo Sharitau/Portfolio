@@ -1,0 +1,30 @@
+/*"Cover Page"*/
+#intro img {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+#intro {
+  background-image: url("../assets/Governance.JPG");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: left;
+  padding-top: 40vh;
+  color:#316331;"../assets/Governance.JPG"
+  height: 100vh;
+
+}
+.navbar-expand-sm{
+  background-color:#454561;
+
+
+  background-repeat: repeat-x;
+}
