@@ -15,20 +15,44 @@
           <link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" href="assets/favicon.ico" />
         <style>
-        body {
-          background-color: #F1F1E6;
+        * {
+          box-sizing: border-box;
         }
 
+        .column {
+          float: left;
+          width: 33.3%;
+          padding: 15px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        body {
+overflow: -moz-scrollbars-horizontal;
+overflow-x: auto;
+overflow-y: auto;
+}
 
         </style>
+
+
+
+
+
+
     </head>
 
 
-<body style = "height: 100">
+<body style>
 
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src = "assets/logo.JPG"height=45 width=50></img></a>
+      <a class="navbar-brand" href="#"><img src = "assets/logo.JPG"height=50 width=50></img></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,7 +68,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="StaticMaps.html">Static Maps</a></li>
               <li><a class="dropdown-item" href="InteractiveMaps.html">Interactive Maps</a></li>
-              <li><a class="dropdown-item" href="MapboxStudio.html">Mapbox Studio</a></li>
               <li><a class="dropdown-item" href="Resume.html">Resume</a></li>
             </ul>
           </li>
@@ -57,20 +80,7 @@
     </div>
   </nav>
 <br><br><br>
-  <div class="container-fluid mt-3">
-    <h1 style = "color: #CDA715"><center>Welcome</center></h1>
-
-  <br>
-&ensp;
-<img src="assets/headshot.jpg" alt="headshot" width="350" height="300" border = "0" align = "left"> <p style = "color: #454561; font-size:25px">&emsp;&ensp; Thank you for stopping by my GIS
-portfolio. My name is Sharita Underwood and I've been in the GIS field since the summer of 2019 when I landed my first internship. Since then, I've landed my first job in the
-GIS field, have learned a lot at work even admist the pandemic, and have started a master's in GIS Development. I hope you enjoy the projects hosted on my portfolio. If
-you have any questions concerning anything you see, want to offer feedback, or are interested in just learning my processes, feel free to reach out. I hope you enjoy bearing witness to my
-GIS journey and find my projects as interesting as I do.</p>
-    <p style = "color: #454561"; font-size:15px ><center>Contact Information: <br> Email: U.sharita@yahoo.com</center></p>
-  </div>
 
 
 
-</body>
-</html>
+  <iframe src="assets/Resume.pdf" width="100%" height="600px">
