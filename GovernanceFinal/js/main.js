@@ -63,8 +63,8 @@ function setMap(){
 
   //use queue to parallelize asynchronous data loading
   d3.queue()
-    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/GovernanceFinal/data/world.topojson") //load background spatial data
-    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/website/main/Portfolio/GovernanceFinal/data/AfricaCountries.TOPOJSON")
+    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/Portfolio/GovernanceFinal/data/world.topojson") //load background spatial data
+    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/Portfolio/GovernanceFinal/data/AfricaCountries.TOPOJSON")
     .await(callback);
 
 
