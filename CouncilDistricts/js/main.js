@@ -20,7 +20,8 @@ function setMap(){
 
   //create Albers equal area conic projection centered on France
   var projection = d3.geoOrthographic()
-    .scale(600)
+    .rotate([80, -36])
+    .scale(5000)
     .translate([width / 2, height / 2.7])
     .clipAngle(85)
     .precision(.1);
@@ -65,7 +66,7 @@ function setMap(){
   d3.queue()
     .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/Portfolio/main/GovernanceFinal/data/world.topojson") //load background spatial data
     .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/Portfolio/main/GovernanceFinal/data/AfricaCountries.TOPOJSON")
-    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/Portfolio/main/CouncilDistrics/Council_Districts.topojson")
+    .defer(d3.json, "https://raw.githubusercontent.com/Sharitau/Portfolio/main/CouncilDistricts/data/Council_Districts.topojson")
     .await(callback);
 
 
@@ -74,7 +75,7 @@ function setMap(){
     //translate europe TopoJSON
     var worldCountries = topojson.feature(world, world.objects.ne_10m_admin_0_countries),
       africanCountries = topojson.feature(africa, africa.objects.AfricaCountries).features;
-    //  atlanta = topojson.feature(atlanta, atlanta.objects.Council_Districts).features;
+      atlanta = topojson.feature(atlanta, atlanta.objects.Council_Districts).features;
 
 
     //add rest of world countries to map
@@ -94,6 +95,18 @@ function setMap(){
         return d.properties.ADMIN;
       })
       .attr("d", path)
+
+      //add Atlanta to map
+      var atlcouncildistricts = map.selectAll(".atlcouncildistricts")
+        .data(atlanta)
+        .enter()
+        .append("path")
+
+        .attr("class", "atlcouncildistricts")
+        .attr("data-atlanta", function(d) {
+          return d.properties.NAME;
+        })
+        .attr("d", path)
 
 
     var countryNames = africanCountries.map(function(d) {
