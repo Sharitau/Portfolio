@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Sharita's Shack</title>
   </head>
@@ -17,11 +16,12 @@
     <style>
 
       .carousel-item {
-        height:10rem;
+        height:6rem;
         background: #589597;
-        color: white;
+        color: black;
         position: relative;
         top:0px;
+        overflow: hidden;
 
       }
 
@@ -31,8 +31,10 @@
         color: white;
         position: relative;
         top:0px;
+        overflow: hidden
 
       }
+
 
       .container {
         position: centered;
@@ -50,16 +52,18 @@
 
 
       .btnn {
+        margin-left: 30px;
         border: none;
+        border-color:#ee9691;
         background-color: inherit;
         font-size: 2em;
         cursor: pointer;
         font-family: 'Segoe UI';
         font-weight: bold;
-        color: white
+        color: white;
 }
 
-
+ p {margin-left: 30px}
 
 
 
@@ -69,54 +73,56 @@
 
 <body>
 
-<div id="myCarousel" class="carousel slide" data-bs-ride = "carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
-  </div>
+
+
+  <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
 
 
 
     <div class ="carousel-inner">
       <div class="carousel-item active">
-        <div class = "container">
+
           <a href="https://sharitau.github.io/Portfolio/index.html">
           <button class="btnn About">About Me</button></a>
           <p>Learn a bit about me</p>
 
 
-        </div>
+
       </div>
       <div class="carousel-item">
-        <div class = "container">
+
           <a href="https://sharitau.github.io/Portfolio/StaticMaps.html">
             <button class="btnn About">Cartography</button></a>
             <p>View my Cartography</p>
-        </div>
+
       </div>
       <div class="carousel-item">
-        <div class = "container">
+
           <a href="https://sharitau.github.io/Portfolio/StaticMaps.html">
             <button class="btnn About">ESRI vs Open Source</button></a>
             <p>Read my new blog! (coming soon) </p>
-        </div>
+
       </div>
       <div class="carousel-item">
-        <div class = "container">
+
           <a href="https://sharitau.github.io/Portfolio/StaticMaps.html">
             <button class="btnn About">Infographs</button></a>
             <p>Explore my infographs</p>
-        </div>
+
       </div>
       <div class="carousel-item">
-        <div class = "container">
+
           <a href="https://sharitau.github.io/Portfolio/InteractiveMaps.html">
             <button class="btnn About">Webmaps</button></a>
             <p>Play with my webmaps</p>
-        </div>
+
       </div>
     </div>
   </div>
@@ -176,3 +182,9 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
