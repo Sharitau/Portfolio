@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>SharitaU GIS</title>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="assets/favicon.ico" />
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .column {
+          float: left;
+          width: 33.3%;
+          padding: 15px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        body {
+overflow: -moz-scrollbars-horizontal;
+overflow-x: auto;
+overflow-y: auto;
+    background-color: #F1F1E6;
+}
+
+        </style>
+
+
+
+
+
+
+    </head>
+
+
+<body style>
+
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src = "assets/logo.png"height=50 width=50></img></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style = "color: #94612b">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Portfolio.html" role="button" data-bs-toggle="dropdown" style = "color: #94612b">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="StaticMaps.html" style = "color: #94612b">Static Maps</a></li>
+              <li><a class="dropdown-item" href="InteractiveMaps.html" style = "color: #94612b">Interactive Maps</a></li>
+              <li><a class="dropdown-item" href="Resume.html" style = "color: #94612b">Resume</a></li>
+              <li><a class="dropdown-item" href="Versus.html" style = "color: #94612b">ESRI vs Open Source</a></li>
+            </ul>
+          </li>
+
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+  <div class="container-fluid mt-3">
+  <h1 style = "color: #a6c258"><center>Static Maps</center></h1>
+  <br><br>
+  <p style = "color: #454561; font-size:25px">&emsp;&ensp; The following images represent a portion of my portfolio and will hopefully show my
+  growth as a cartographer as I experiement with different types of maps, visualizations, techniques and softwares. To learn a bit more about each
+  map and my journey, scroll a bit futher down the page.</p>
+</div>
+
+
+
+
+  <div class="row">
+    <div class="column">
+      <a href="https://sharitau.github.io/Portfolio/assets/TourDeEastCoast.pdf">
+      <img src="assets/Tour.JPG"height=530 alt="TourDeEastCoast" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <a href="https://sharitau.github.io/Portfolio/assets/Fertility_Rates.pdf">
+      <img src="assets/Fertility_Rates.JPG"height=530 alt="Babybust Infographic" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <a href="https://sharitau.github.io/Portfolio/assets/Atlanta-Film.pdf">
+      <img src="assets/Atlanta-Films.JPG"height=530 alt="Atlanta Films Map" style="width:100%"></a>
+    </div>
+  </div>
+
+
+    <div class="row">
+      <div class="column">
+        <a href="https://sharitau.github.io/Portfolio/assets/NASAChoropleth.pdf">
+        <img src="assets/NASA.JPG"height=530 alt="NASA Choropleth Map" style="width:100%"></a>
+      </div>
+      <div class="column">
+        <a href="https://sharitau.github.io/Portfolio/assets/Africa.pdf">
+        <img src="assets/africa.JPG"height=530 alt="Africa Refernece Map" style="width:100%"></a>
+      </div>
+      <div class="column">
+        <a href="https://sharitau.github.io/Portfolio/assets/Pennsylvania.pdf">
+        <img src="assets/Pennsylvania.JPG"height=530 alt="Pennsylvania Brochure Map" style="width:100%"></a>
+      </div>
+
+    </div>
+<br><br>
+  <h1 style = "color: #a6c258"><center>GIS Journey</center></h1>
+
+<!--<iframe width='33.3%' height='400px' src="https://api.mapbox.com/styles/v1/sharitau/ckw8fdsli0d3415nwu2y3jp8s.html?title=false&access_token=pk.eyJ1Ijoic2hhcml0YXUiLCJhIjoiY2t1NzJ5MmxyMTZ5MTJ4bzY3aWhydno0cCJ9.Xgtl2pmPny9ZHOf6Jata_w&zoomwheel=false#1.22/45.8/-63.9" title="VintageMap" style="border:none;"></iframe>-->
+
+
+
+<br><br><br><br>
+<a href = "https://sharitau.github.io/Portfolio/assets/TourDeEastCoast.pdf"> <img src="assets/Tour.JPG" alt="U.S. East Coast bike trail" width="350" height="300" border = "0" align = "right"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; This map challenged me to work with both
+raster and vector data at the same time while also learning how to represent topographic data. To do this, I made a roughly 21000-mile bike tour similar to the Tour De France.   </p>
+
+<p style = "color: #454561; font-size:25px">&emsp;&ensp;This map was very challenging and I learning taught me the importance of carefully picking landsat data. My intial version of this map was very
+  pixelated due to bad landsat area and I ended up having to chose new landsat data and starting almost from scratch. While this version is much better and I really enjoy that some of the labels were duplicated to create shadows
+  of themselves so that they stand out, in retrospect I didn't think I choose the best colors for this map, everything is a bit visually loud for me.
+<br><br><br><br>
+
+
+
+<a href = "https://sharitau.github.io/Portfolio/assets/Fertility_Rates.pdf"> <img src="assets/Fertility_Rates.JPG" alt="Fertility Rate Infographic" width="350" height="300" border = "0" align = "left"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; This infographic showcases my Adobe Illustrator
+skills by telling an engaging story about the decline of fertility rates while featuring a bivariate map and a graph. </p>
+
+<p style = "color: #454561; font-size:25px">&emsp;&ensp;This infographic took quite a bit of time as I had to play with graphics, colors, and fonts a lot. I even tried to tell the story in an even more
+  brief way by highlight all of the most imporant text in red. Overall I think it's really good. If I had to change something however, I think I could have worked a bit more on eliminating blank space and using more graphics in place of words.
+
+<br><br><br><br>
+
+<a href = "https://sharitau.github.io/Portfolio/assets/Atlanta-Film.pdf"> <img src="assets/Atlanta-Films.JPG" alt="Atlanta Film Map" width="350" height="300" border = "0" align = "right"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; The goal of this map was to
+simply explore an aspect of cartographic representation that demonstrates my personal interest. As someone who lives in the Atlanta metropolitan area who enjoys movies, I explored that various
+places Atlanta has been dressed up to portray due to the wide variety of neighborhoods with different architectural themes. </p>
+
+<p style = "color: #454561; font-size:25px">&emsp;&ensp;This has been one of my most fun maps to make since I enjoyed the background information of researching the various movies that have been filmed
+  in the area and the setting of those movies. I also enjoyed learning how to make the spotlight for each neighborhood. The one thing I would change however are the colors of map. I should have
+  used reds, whites, and blacks to represent Hollywood and the red carpet.
+<br><br><br><br>
+
+<a href = "https://sharitau.github.io/Portfolio/assets/NASAChoropleth.pdf"> <img src="assets/NASA.JPG" alt="NASA Choropleth Map" width="350" height="300" border = "0" align = "left"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; In my map of NASA funding, I attempted to tell
+the story of minorities in regards to NASA funding per state. I ended up being able to show that most states with a high amount of   </p>
+
+<p style = "color: #454561; font-size:25px">&emsp;&ensp;This map was a bit hard to make and while the story is told, I think these weren't two great variables to use
+  for this map and that it's pretty easy to lose the story. So while the process of making the map itself was very sucessful, I think I could have chose a better topic
+  which would have made this map more meaningful.
+
+<br><br><br><br>
+
+<a href = "https://sharitau.github.io/Portfolio/assets/Africa.pdf"> <img src="assets/africa.JPG" alt="Africa Reference Map" width="350" height="300" border = "0" align = "right"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; My map of Africa was to be used for a fictional monograph
+   as a reference map to serve as a spatial catalog for the places and regions. Hence, it needed to be dense and act as a one-stop graphic of the political geography. </p>
+
+<p style = "color: #454561; font-size:25px">&emsp;&ensp;I enjoy this map quite a bit and think it's pretty good, however I shold have zoomed
+  out more to myself room to label the west African nations and adjusted the placement of coastal cities' labels so that they are entirely in
+  the water.
+
+  <br><br><br><br>
+
+<a href = "https://sharitau.github.io/Portfolio/assets/Pennsylvania.pdf"> <img src="assets/Pennsylvania.JPG" alt="Penssylvania Brochure Map" width="350" height="300" border = "0" align = "left"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; This was one of the first maps I made. The goal of it was to make a protoype for a brochure featuring each state in the United States. It needed to feature an inset map, emphaize cultural, historal, environmental, or recreational points,
+and feature call outs.</p>
+
+<p style = "color: #454561; font-size:25px">&emsp;&ensp;While the goal of my map was met and I think it's  a pretty good visualization and featues good color selections,
+  if I had to do it again, I would make the shadows for my callouts neater so that they fit behind the callouts better, as well as I would move some of my labels so that
+  they aren't on the state boundary line.
+
+
+</body>
+</html>

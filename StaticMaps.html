@@ -1,189 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-      <title>SharitaU GIS</title>
-        <meta charset="UTF-8"
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/infographstyle.css">
+
+
+    <!-- Bootstrap CSS -->
+
+    <title>Cartography & Infographs</title>
+  </head>
+
+
+  <style>
+
+    .carousel-item {
+      height:6rem;
+      background: #589597;
+      color: black;
+      position: relative;
+      top:0px;
+      overflow: hidden;
+
+    }
+
+    .carousel-item {
+      height:6rem;
+      background: #589597;
+      color: white;
+      position: relative;
+      top:0px;
+      overflow: hidden
+
+    }
+
+
+    .container {
+      position: centered;
+      bottom:0;
+      left:0;
+      right: 0;
+      padding-top: 15px;
+
+
+    }
 
 
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-          <link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" href="assets/favicon.ico" />
-        <style>
-        * {
-          box-sizing: border-box;
-        }
 
-        .column {
-          float: left;
-          width: 33.3%;
-          padding: 15px;
-        }
 
-        /* Clearfix (clear floats) */
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-
-        body {
-overflow: -moz-scrollbars-horizontal;
-overflow-x: auto;
-overflow-y: auto;
-    background-color: #F1F1E6;
+    .btnn {
+      margin-left: 30px;
+      border: none;
+      border-color:#ee9691;
+      background-color: inherit;
+      font-size: 2em;
+      cursor: pointer;
+      font-family: 'Segoe UI';
+      font-weight: bold;
+      color: white;
 }
 
-        </style>
+p {margin-left: 30px}
+
+
+
+
+
+  </style>
+
+
+<body>
 
 
 
 
 
 
-    </head>
 
 
-<body style>
+          <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src = "assets/logo.png"height=50 width=50></img></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            </ol>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" style = "color: #94612b">Home</a>
-          </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="Portfolio.html" role="button" data-bs-toggle="dropdown" style = "color: #94612b">Portfolio</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="StaticMaps.html" style = "color: #94612b">Static Maps</a></li>
-              <li><a class="dropdown-item" href="InteractiveMaps.html" style = "color: #94612b">Interactive Maps</a></li>
-              <li><a class="dropdown-item" href="Resume.html" style = "color: #94612b">Resume</a></li>
-              <li><a class="dropdown-item" href="Versus.html" style = "color: #94612b">ESRI vs Open Source</a></li>
-            </ul>
-          </li>
+
+            <div class ="carousel-inner">
+              <div class="carousel-item active">
+
+                  <a href="https://sharitau.github.io/Portfolio/index.html">
+                  <button class="btnn About">About Me <br>   <h6>Learn a bit about me</h6> </button></a>
 
 
 
 
-        </ul>
-      </div>
-    </div>
-  </nav>
-<br><br><br>
-  <div class="container-fluid mt-3">
-  <h1 style = "color: #a6c258"><center>Static Maps</center></h1>
-  <br><br>
-  <p style = "color: #454561; font-size:25px">&emsp;&ensp; The following images represent a portion of my portfolio and will hopefully show my
-  growth as a cartographer as I experiement with different types of maps, visualizations, techniques and softwares. To learn a bit more about each
-  map and my journey, scroll a bit futher down the page.</p>
-</div>
+              </div>
+              <div class="carousel-item">
+
+                  <a href="https://sharitau.github.io/Portfolio/StaticMaps.html">
+                    <button class="btnn About">Cartography & Infographs <br> <h6>View my Static Visuals</h6> </button></a>
+
+
+              </div>
+              <div class="carousel-item">
+
+                  <a href="https://sharitau.github.io/Portfolio/StaticMaps.html">
+                    <button class="btnn About">ESRI vs Open Source <br>   <h6>Read my new blog! (coming soon) </h6> </button></a>
+
+
+              </div>
+
+              <div class="carousel-item">
+
+                  <a href="https://sharitau.github.io/Portfolio/InteractiveMaps.html">
+                    <button class="btnn About">Webmaps <br>   <h6>Play with my webmaps</h6></button></a>
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+      <main role="main">
+<section>
+        <!-- <h1 class="jumbotron-heading" style="text-align: center">Cartography & Infographs</h1> -->
+        <p class="lead text-muted" style = "text-align: center">This page represents some of my work in cartography and infographs through various phases of my learning, growing and recreating. This page is updated frequently so please stop by and view often.</p>
+</section>
+
+
+  <!-- <div class='image-background'> -->
+        <div class="album py-5 bg-light">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/Redistricting.jpg" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">A map I made detailing the city's  redistricting needs in regards to population for each council district.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/Redistricting.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/AtlantaInfograph.jpg" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">While not an original layout, this showcases my ability to recreate an existing infograph with updated information from scratch.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/AtlantaInfograph.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/Atlanta-Films.JPG" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">The goal of this map was to simply explore an aspect of cartographic representation that demonstrates my personal interest.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/Atlanta-Film.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/Tour.JPG" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">This map really challenged me on symbolozing topography making certain elements stand out on a busy map.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/TourDeEastCoast.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/Fertility_Rates.JPG" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">This infographic showcases my Adobe Illustrator skills by telling an engaging story about the decline of fertility rates.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/Fertility_Rates.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/africa.JPG" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">The map helped me practice organizing dense information by utilizaing various fonts and symbology.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/Africa.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/NASA.JPG" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">With this exercise I practiced making a bivariate choropleth map which was a bit challenging for me.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/NASAChoropleth.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" img src="assets/Pennsylvania.JPG" alt="Card image cap" style="height:350px">
+                  <div class="card-body">
+                    <p class="card-text">One of the first maps I made, the goal was to make a protoype for a brochure featuring points, and feature call outs.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.open('../assets/Pennsylvania.pdf','_blank')">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- </div> -->
+          </div>
+        </div>
+
+      </main>
 
 
 
 
-  <div class="row">
-    <div class="column">
-      <a href="https://sharitau.github.io/Portfolio/assets/TourDeEastCoast.pdf">
-      <img src="assets/Tour.JPG"height=530 alt="TourDeEastCoast" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <a href="https://sharitau.github.io/Portfolio/assets/Fertility_Rates.pdf">
-      <img src="assets/Fertility_Rates.JPG"height=530 alt="Babybust Infographic" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <a href="https://sharitau.github.io/Portfolio/assets/Atlanta-Film.pdf">
-      <img src="assets/Atlanta-Films.JPG"height=530 alt="Atlanta Films Map" style="width:100%"></a>
-    </div>
-  </div>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <div class="row">
-      <div class="column">
-        <a href="https://sharitau.github.io/Portfolio/assets/NASAChoropleth.pdf">
-        <img src="assets/NASA.JPG"height=530 alt="NASA Choropleth Map" style="width:100%"></a>
-      </div>
-      <div class="column">
-        <a href="https://sharitau.github.io/Portfolio/assets/Africa.pdf">
-        <img src="assets/africa.JPG"height=530 alt="Africa Refernece Map" style="width:100%"></a>
-      </div>
-      <div class="column">
-        <a href="https://sharitau.github.io/Portfolio/assets/Pennsylvania.pdf">
-        <img src="assets/Pennsylvania.JPG"height=530 alt="Pennsylvania Brochure Map" style="width:100%"></a>
-      </div>
-
-    </div>
-<br><br>
-  <h1 style = "color: #a6c258"><center>GIS Journey</center></h1>
-
-<!--<iframe width='33.3%' height='400px' src="https://api.mapbox.com/styles/v1/sharitau/ckw8fdsli0d3415nwu2y3jp8s.html?title=false&access_token=pk.eyJ1Ijoic2hhcml0YXUiLCJhIjoiY2t1NzJ5MmxyMTZ5MTJ4bzY3aWhydno0cCJ9.Xgtl2pmPny9ZHOf6Jata_w&zoomwheel=false#1.22/45.8/-63.9" title="VintageMap" style="border:none;"></iframe>-->
-
-
-
-<br><br><br><br>
-<a href = "https://sharitau.github.io/Portfolio/assets/TourDeEastCoast.pdf"> <img src="assets/Tour.JPG" alt="U.S. East Coast bike trail" width="350" height="300" border = "0" align = "right"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; This map challenged me to work with both
-raster and vector data at the same time while also learning how to represent topographic data. To do this, I made a roughly 21000-mile bike tour similar to the Tour De France.   </p>
-
-<p style = "color: #454561; font-size:25px">&emsp;&ensp;This map was very challenging and I learning taught me the importance of carefully picking landsat data. My intial version of this map was very
-  pixelated due to bad landsat area and I ended up having to chose new landsat data and starting almost from scratch. While this version is much better and I really enjoy that some of the labels were duplicated to create shadows
-  of themselves so that they stand out, in retrospect I didn't think I choose the best colors for this map, everything is a bit visually loud for me.
-<br><br><br><br>
-
-
-
-<a href = "https://sharitau.github.io/Portfolio/assets/Fertility_Rates.pdf"> <img src="assets/Fertility_Rates.JPG" alt="Fertility Rate Infographic" width="350" height="300" border = "0" align = "left"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; This infographic showcases my Adobe Illustrator
-skills by telling an engaging story about the decline of fertility rates while featuring a bivariate map and a graph. </p>
-
-<p style = "color: #454561; font-size:25px">&emsp;&ensp;This infographic took quite a bit of time as I had to play with graphics, colors, and fonts a lot. I even tried to tell the story in an even more
-  brief way by highlight all of the most imporant text in red. Overall I think it's really good. If I had to change something however, I think I could have worked a bit more on eliminating blank space and using more graphics in place of words.
-
-<br><br><br><br>
-
-<a href = "https://sharitau.github.io/Portfolio/assets/Atlanta-Film.pdf"> <img src="assets/Atlanta-Films.JPG" alt="Atlanta Film Map" width="350" height="300" border = "0" align = "right"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; The goal of this map was to
-simply explore an aspect of cartographic representation that demonstrates my personal interest. As someone who lives in the Atlanta metropolitan area who enjoys movies, I explored that various
-places Atlanta has been dressed up to portray due to the wide variety of neighborhoods with different architectural themes. </p>
-
-<p style = "color: #454561; font-size:25px">&emsp;&ensp;This has been one of my most fun maps to make since I enjoyed the background information of researching the various movies that have been filmed
-  in the area and the setting of those movies. I also enjoyed learning how to make the spotlight for each neighborhood. The one thing I would change however are the colors of map. I should have
-  used reds, whites, and blacks to represent Hollywood and the red carpet.
-<br><br><br><br>
-
-<a href = "https://sharitau.github.io/Portfolio/assets/NASAChoropleth.pdf"> <img src="assets/NASA.JPG" alt="NASA Choropleth Map" width="350" height="300" border = "0" align = "left"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; In my map of NASA funding, I attempted to tell
-the story of minorities in regards to NASA funding per state. I ended up being able to show that most states with a high amount of   </p>
-
-<p style = "color: #454561; font-size:25px">&emsp;&ensp;This map was a bit hard to make and while the story is told, I think these weren't two great variables to use
-  for this map and that it's pretty easy to lose the story. So while the process of making the map itself was very sucessful, I think I could have chose a better topic
-  which would have made this map more meaningful.
-
-<br><br><br><br>
-
-<a href = "https://sharitau.github.io/Portfolio/assets/Africa.pdf"> <img src="assets/africa.JPG" alt="Africa Reference Map" width="350" height="300" border = "0" align = "right"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; My map of Africa was to be used for a fictional monograph
-   as a reference map to serve as a spatial catalog for the places and regions. Hence, it needed to be dense and act as a one-stop graphic of the political geography. </p>
-
-<p style = "color: #454561; font-size:25px">&emsp;&ensp;I enjoy this map quite a bit and think it's pretty good, however I shold have zoomed
-  out more to myself room to label the west African nations and adjusted the placement of coastal cities' labels so that they are entirely in
-  the water.
-
-  <br><br><br><br>
-
-<a href = "https://sharitau.github.io/Portfolio/assets/Pennsylvania.pdf"> <img src="assets/Pennsylvania.JPG" alt="Penssylvania Brochure Map" width="350" height="300" border = "0" align = "left"> </a> <p style = "color: #454561; font-size:25px">&emsp;&ensp; This was one of the first maps I made. The goal of it was to make a protoype for a brochure featuring each state in the United States. It needed to feature an inset map, emphaize cultural, historal, environmental, or recreational points,
-and feature call outs.</p>
-
-<p style = "color: #454561; font-size:25px">&emsp;&ensp;While the goal of my map was met and I think it's  a pretty good visualization and featues good color selections,
-  if I had to do it again, I would make the shadows for my callouts neater so that they fit behind the callouts better, as well as I would move some of my labels so that
-  they aren't on the state boundary line.
-
-
-</body>
-</html>
+  </body>
