@@ -23,7 +23,7 @@
     .album {
       height: 100%;
       min-height: 500px;
-      background-image: url("https://sharitau.github.io/Portfolio/assets/agedMap.JPG");
+      background-color: #f1e8e1;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
